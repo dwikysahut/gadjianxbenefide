@@ -7,9 +7,6 @@ module.exports = {
     getEmployees: async function (request, response) {
         try {
             const result = await employeesModel.getEmployees()
-            // const result = {
-            //     "Status Code":200,
-            // }
             return helper.response(response, 200, result)
 
         } catch (error) {
